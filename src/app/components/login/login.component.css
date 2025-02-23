@@ -44,6 +44,7 @@ p a {
   cursor: pointer;
   color: rgb(12, 10, 10);
   text-decoration: none;
+  margin-left: 4px;
 }
 
 p a:hover {

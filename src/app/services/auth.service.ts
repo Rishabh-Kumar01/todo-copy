@@ -41,4 +41,8 @@ export class AuthService {
       credentials
     );
   }
+
+  getToken(): string | null {
+    return localStorage.getItem('auth_token');
+  }
 }
