@@ -12,10 +12,9 @@ import { TodoFormComponent } from '../todo-form/todo-form.component.js';
   imports: [CommonModule, TodoFormComponent],
 })
 export class TodoPageComponent implements OnInit {
-  constructor(private authStore: AuthStoreService, private router: Router) {
-    // Immediately retrieve the current authentication state.
-    // this.auth = this.authStore.getAuth();
-  }
+  constructor(private authStore: AuthStoreService, private router: Router) {}
+  // Immediately retrieve the current authentication state.
+  // this.auth = this.authStore.getAuth();
 
   auth$!: Observable<{
     token: string | null;
